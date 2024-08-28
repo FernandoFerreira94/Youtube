@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../css/youtube.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -15,12 +19,13 @@
 
 <body style="padding-bottom: 500px;">
 
+
     <!--Inicio cabeçalho-->
     <header>
         <div class="header">
             <div class="youtube">
-                <a href="#"><img src="../icons/hamburger-menu.svg" alt="" class="hamburger"></a>
-                <a href="#"><img src="../icons/youtube-logo.svg" alt="" class="img-youtube"></a>
+                <img src="../icons/hamburger-menu.svg" alt="" class="hamburger">
+                <a href="https://www.youtube.com"><img src="../icons/youtube-logo.svg" alt="" class="img-youtube"></a>
             </div>
             <div class="search">
                 <input type="text" placeholder="Search">
@@ -28,6 +33,7 @@
                 <img src="../icons/voice-search-icon.svg" alt="" class="img-voice">
             </div>
             <div class="log">
+
                 <img src="../icons/upload.svg" alt="">
                 <img src="../icons/youtube-apps.svg" alt="">
                 <div class="notificacao">
@@ -43,7 +49,7 @@
     <!--Inicio Menu Lateral-->
     <div class="menu-conteudo">
         <div class="menu-lateral">
-            <ul>
+            <ul class="lateral">
                 <li>
                     <img src="../icons/home.svg" alt="">
                     <span>Home</span>
@@ -69,11 +75,33 @@
                     <span>Library</span>
                 </li>
             </ul>
+
         </div>
+
+
         <!--Fim Menu Lateral-->
 
         <!--Inicio Conteudo-->
         <main>
+            <div class="menu-central">
+                <p class="title">Tudo</p>
+                <p class="title">Música</p>
+                <p class="title">PsyTrance</p>
+                <p class="title">Deep House</p>
+                <p class="title">Jogos</p>
+                <p class="title">Funck Carioca</p>
+                <p class="title">Jogos</p>
+                <p class="title">Mixes</p>
+                <p class="title">Ao vivo</p>
+                <p class="title">Hip Hop brasileiro</p>
+                <p class="title">EA Sport FC 24</p>
+                <p class="title">Git</p>
+                <p class="title">Musica -lo-fi</p>
+            </div>
+            <div class="data">
+                <p id="data">data</p>
+                <p id="horas">horario</p>
+            </div>
             <div class="content-Videos">
                 <div class="videos">
                     <div class="img-Video">
@@ -194,5 +222,6 @@
     <!--Fim Conteudo-->
 
 </body>
+<script src="./yotube.js"></script>
 
 </html>
