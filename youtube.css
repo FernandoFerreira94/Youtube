@@ -1,3 +1,7 @@
+body {
+  margin-top: 35px;
+}
+
 header .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,6 +12,14 @@ header .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 2;
+  background-color: white;
+  padding: 5px;
 }
 header .header .youtube {
   -webkit-box-flex: 1;
@@ -40,14 +52,14 @@ header .header .search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 55;
+  height: 50px;
   max-width: 600px;
   min-width: 200px;
 }
 header .header .search input {
   border-radius: 30px 0px 0px 30px;
   width: 80%;
-  height: 30px;
+  height: 28px;
   margin-left: 2px;
   border: 1px solid rgb(210, 210, 210);
   padding: 3px 10px;
@@ -131,16 +143,19 @@ header .header .log .notificacao span {
   border-radius: 7px;
   cursor: pointer;
   background-color: rgba(202, 202, 202, 0.1);
-  -webkit-transition: background 0.15s;
-  transition: background 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 .menu-conteudo .menu-central .title:hover {
   background-color: rgba(202, 202, 202, 0.8);
+  -webkit-transform: scaleX(1.06);
+          transform: scaleX(1.06);
 }
 
 main {
-  margin: 10px;
+  margin: 10px 10px 10px 20px;
   padding: 10px;
+  background-color: rgba(202, 202, 202, 0.2);
 }
 main .data {
   display: -webkit-box;
@@ -158,8 +173,8 @@ main .data {
   right: 10px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
   color: white;
+  z-index: 1;
 }
 main .data #data,
 main .data #horas {
@@ -167,16 +182,23 @@ main .data #horas {
   font-size: 16px;
 }
 
-.menu-lateral {
-  margin-top: 10px;
-}
 .menu-lateral .lateral {
+  margin-top: 10px;
+  position: fixed;
+  left: 5px;
+  top: 50px;
+  bottom: 0px;
   padding: 0px;
   text-align: center;
 }
 .menu-lateral .lateral li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 5px 1px;
+  border-radius: 10px;
 }
 .menu-lateral .lateral li img {
   width: 28px;
@@ -185,6 +207,9 @@ main .data #horas {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
   font-size: 9px;
+}
+.menu-lateral .lateral li:hover {
+  background-color: rgba(202, 202, 202, 0.8);
 }
 
 .content-Videos {
@@ -213,12 +238,19 @@ main .data #horas {
   position: absolute;
   right: 5px;
   bottom: 8px;
+  z-index: 1;
 }
 .content-Videos .videos .img-Video img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.content-Videos .videos .img-Video img:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 .content-Videos .videos .grid {
   display: -ms-grid;
@@ -238,6 +270,10 @@ main .data #horas {
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 20px;
+  cursor: pointer;
+}
+.content-Videos .videos .text .title:hover {
+  color: rgb(55, 55, 255);
 }
 .content-Videos .videos .text .author {
   font-size: 10px;
